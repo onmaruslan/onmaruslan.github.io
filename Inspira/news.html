@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+   
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="build/css/slick.css">
+   <link rel="stylesheet" href="build/css/slick-theme.css">
+   <link rel="stylesheet" href="build/css/main.min.css">
+   <title>News</title>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+</head>
+<body>
+    <script>
+        $("body").css("display", "none");
+
+$("body").fadeIn(2000);
+
+$(".drawer-list a:not(.menu-item-has-children a)").click(function(event){
+event.preventDefault();
+linkLocation = this.href;
+$("body").fadeOut(1000, redirectPage);
+});
+
+function redirectPage() {
+window.location = linkLocation;
+}
+$(".menu-item-has-children a").click(function(event){
+});
+
+           </script>
+    <header class="header-p" id="header-p">
+        <nav>
+            <div class="section-navHP" id="section-navHP">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="top-menu-pages">
+                                    <input id="hamburger" class="hamburger d-none" type="checkbox"/>
+                                <label class="hamburger d-md-none d-block" for="hamburger">
+                                    <i></i>
+                                </label>
+    
+                                <a href="index.html" class="drawer-list__logo">
+                                    <img src="build/img/product_catecory/insipra-logo-light.svg" alt="Inspire">
+                                </a> 
+                                <div class="drawer-list">
+                                    <a href="index.html" class="drawer-list__logo drawer-list__logo_HP d-block d-md-none">
+                                        <img src="build/img/product_catecory/insipra-logo-light.svg" alt="Inspire">
+                                    </a> 
+    
+                                        <ul class="top-menu-hp">
+                                                <li ><a href="productCategory.html">Tooted</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="#">Mööbel</a></li>
+                                                        <li><a href="#">Köögid</a></li>
+                                                        <li><a href="#">Vannituba</a></li>
+                                                        <li><a href="#">Valgustid</a></li>
+                                                        <li><a href="#">Välimööbel</a></li>
+                                                        <li><a href="#">Tapeedid</a></li>
+                                                        <li><a href="#">Vaibad</a></li>
+                                                        <li><a href="#">Aksessuaarid</a></li>
+                                                        <li><a href="#">Projektimüük</a></li>
+                                                        <li><a href="#">Brändid</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="active"><a href="brands.html">Brändid</a></li>
+                                                <li><a href="news.html">Uudised</a></li>
+                                                <li><a href="outletList.html">Outlet</a></li>
+                                                <li><a href="projects.html">Tehtud Tööd</a></li>
+                                                <li><a href="team.html">Meist</a></li>
+                                                <li><a href="contact.html">Kontakt</a></li>
+                                            </ul>
+                                            <ul class="drawer-list__tel-clock d-flex d-md-none" >
+                                                <li>
+                                                    <a href="#"><img src="build/img/homepage/Icon-phone-call.svg" alt="phone"> <span>+372</span> 6 108 468</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="build/img/homepage/inspira_design/Icon_feather-clock.svg" alt="clock"> E-R 10-18</a>
+                                                </li>
+                                            </ul>
+                                    <!-- <div class="drawer-list__tel">
+                                            <a class="drawer-list__tel-img" href="#"><img src="build/img/homepage/Icon-phone-call.svg" alt="phone"></a> 
+                                        <a href="#"><span>+372</span> 6 108 468</a>
+                                    </div>         -->
+                                </div>
+                                <div  class="drawer-list__phoneP">
+                                    <a href="#" class="drawer-list__phoneP-img">
+                                        <img src="build/img/product_catecory/call.svg" alt="Contacts">
+                                    </a>
+    
+                                    <div class="drawer-list__phoneP-drop ">
+                                            <ul class="drop-menu">
+                                                    <li class="drop-menu__phone">
+                                                        <img src="build/img/homepage/inspira_design/Icon_feather-phone-call.svg" alt="phone">
+                                                        <div>Helistage meile</div>
+                                                        <a href="#">
+                                                                <span>+372</span> 5621 1113
+                                                        </a>
+                                                        <br>
+                                                        <a href="#">
+                                                                <span>+372</span> 6 108 468
+                                                        </a>
+                                                        
+                                                    </li>
+                                                    <li class="drop-menu__mail">
+                                                        <a href="#">
+                                                                <img src="build/img/product_catecory/menu-icon/mail.svg" alt="mail">
+                                                                <span class="raleway-b">inspira@inspira.ee</span>   
+                                                        </a>
+                                                        
+                                                    </li>
+                                                    <li class="drop-menu__map">
+                                                        <a href="#">
+                                                                <img src="build/img/product_catecory/menu-icon/map.svg" alt="map">
+                                                                <span class="raleway-b"> Tartu mnt 14, Tallinn, Eesti </span> 
+                                                        </a> 
+                                                        
+                                                    </li>
+                                                    <li class="drop-menu__clock">
+                                                        <img src="build/img/product_catecory/menu-icon/clock.svg" alt="clock">
+                                                        <span class="raleway-b">E-R 10-18</span>
+                                                    </li>
+                                                </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </nav>
+    </header>
+
+
+<main class="main-pages">
+    <div class="shoppingCart__block">
+        <div class="shoppingCart__block_content">
+            <div class="shoppingCart__block_content-close"></div>
+
+            <div class="shoppingCart__block_content-top">
+                <div class="shoppingCart__block_content-title">
+                    <h3><img src="build/img/outlet/Icon-shopping-cart.svg" alt="shoppingCart"> Outlet ostukorv</h3>
+                </div>
+                <div class="shoppingCart__block_content-products">
+                    <a href="#" class="shoppingCart__block_content-product">
+                        <h4>
+                            Flaminia Nuda valamu 860x580 <span>&nbsp;<i class="fal fa-chevron-right"></i></span>
+                        </h4>
+                        <div class="shoppingCart__block_content-product-middle">
+                            <img class="shoppingCart__block_content-product-img" src="build/img/homepage/nuda85_FL102_h.jpg" alt="product">
+                            <div class="shoppingCart__block_content-product-delet">
+                                <img src="build/img/homepage/Emalda.svg" alt="delet">
+                            </div>
+                        </div>
+                        <div class="shoppingCart__block_content-product-bottom">
+                            <div class="shoppingCart__block_content-product-bottom_cost">
+                                Hind: <span>11 290€</span>
+                            </div>
+                            <div class="shoppingCart__block_content-product-bottom_quantity">
+                                Kogus: <span>1tk</span> 
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="shoppingCart__block_content-product">
+                        <h4>
+                            Flaminia Nuda valamu 860x580 <span>&nbsp;<i class="fal fa-chevron-right"></i></span>
+                        </h4>
+                        <div class="shoppingCart__block_content-product-middle">
+                            <img class="shoppingCart__block_content-product-img" src="build/img/homepage/nuda85_FL102_h.jpg" alt="product">
+                            <div class="shoppingCart__block_content-product-delet">
+                                <img src="build/img/homepage/Emalda.svg" alt="delet">
+                            </div>
+                        </div>
+                        <div class="shoppingCart__block_content-product-bottom">
+                            <div class="shoppingCart__block_content-product-bottom_cost">
+                                Hind: <span>11 290€</span>
+                            </div>
+                            <div class="shoppingCart__block_content-product-bottom_quantity">
+                                Kogus: <span>1tk</span> 
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                
+                
+            </div>
+            <div class="shoppingCart__block_content-bottom">
+                <div class="shoppingCart__block_content-bottom-all">
+                    <div>Summa kokku:</div>
+                    <div><span>22 480€</span> </div>
+                </div>
+                
+                <button id="shoppingCart__btn" class="alati-block-3_btn shoppingCart__btn">Tellimuse Vormistamine <span>&nbsp;<i class="fal fa-chevron-right"></i></span></button>
+            </div>
+        </div>
+    </div>
+    <button class="shoppingCartBtn">
+        <img src="build/img/outlet/Icon-shopping-cart.svg" alt="shoppingCart">
+        <span>2</span>
+    </button>
+    <section class="pageTitle pageTitle-uudised" id="pageTitle-uudised">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="h1-p" id="h1-p">
+                        UUDISED
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="alati alati-uudised" id="alati-uudised">
+        <div class="container">
+            <div class="row">  
+                <div class="col">
+                    <div class="alati-block">
+                        <div class="alati-block-1">
+                                <h5>
+                                    Ole alati kursis Euroopa tippdisainiga
+                                </h5>
+                                <div class="alati-block-1-desc">
+                                        <span>Telli endale Inspira uudiskiri.</span>  Kord või paar kuus  jõuavad meie uudiskirjaga Sinuni viimased disaini trendid.
+                                </div>
+                        </div>
+                        <form action="#">
+                            <div class="alati-block-2">
+                                <div><input type="text"></div>
+                                <div><input type="text"></div>
+                            </div>
+                            <div class="alati-block-3">
+                                <div>
+                                        Liitudes kinnitan, et olen tutvunud 
+                                        Inspira <a href="#">privaatsusteabega.</a> 
+                                </div>
+                                <button class="alati-block-3_btn">Liitu uudiskirjaga <span>&nbsp;<i class="fal fa-chevron-right"></i></span></button>
+                            </div>
+                        </form>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="uudised-uudised" id="uudised-uudised">
+        <div class="container">
+            <div class="uudised-content">
+                <a href="#" class="uudised-item">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="uudised-item__img">
+                                <img src="build/img/homepage/uudised/uudised-1.jpg" alt="Garden layers">
+                                <div class="uudised-item__img-title read-more-article">
+                                    29 juuli 2019
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="uudised-item__text">
+                                <div>
+                                    <h3>Uus ja unikaalne bränd Inspiras – GAN</h3>
+                                    <p>
+                                        <b>“GARDEN LAYERS” </b> on esimene ainulaadse <b>GAN Spaces</b>  kontseptsiooni raames loodud välimööbli kollektsioon, kuhu kuuluvad vaibad, matid, rull-padjad ja padjad, mida saab paigutada mitmel erineval moel, luues
+                                    </p>
+                                </div>
+                                <div class="uudised-item__text-btn read-more-article">
+                                    <div class="uudised-item__text-btn-main">
+                                        <div class="uudised-item__text-btn_text">
+                                            Loe rohkem
+                                        </div>
+                                        
+                                        <div class="uudised-item__text-btn_arrow">
+                                            <i class="fal fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+                <a href="#" class="uudised-item">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="uudised-item__img">
+                                <img src="build/img/homepage/uudised/uudised-2.jpg" alt="B&B Italia layers">
+                                <div class="uudised-item__img-title read-more-article">
+                                    1 mai 2019 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="uudised-item__text">
+                                <div>
+                                    <h3>Uued terrassimööbli näidised Inspiras</h3>
+                                    <p>
+                                        <b>Inspira</b>  showroomist võib leida uue <b>B&B Italia</b>  välimööbli kollektsiooni <b>“Ribes”</b> . Ribes on Antonio Citterio kavandatud uus modulaarne istmete süsteem, mis keskendub mitmekülgsusele, värvile ja põnevatele materjalide. 
+                                    </p>
+                                </div>
+
+                                <div class="uudised-item__text-btn read-more-article">
+                                    <div class="uudised-item__text-btn-main">
+                                        <div class="uudised-item__text-btn_text">
+                                            Loe rohkem
+                                        </div>
+                                        
+                                        <div class="uudised-item__text-btn_arrow">
+                                            <i class="fal fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+                <a href="#"class="uudised-item">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="uudised-item__img">
+                                <img src="build/img/homepage/uudised/uudised-3.jpg" alt="Wall&Deco layers">
+                                <div class="uudised-item__img-title read-more-article">
+                                    1 oktoober 2018
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="uudised-item__text">
+                                <div>
+                                    <h3>Vau! Wall&Deco niiskuskindlad tapeedid
+                                            Wet-System oktoobris -20% soodsamad!</h3>
+                                    <p>
+                                        Oktoobris on käimas Wall&Deco tapeetide kampaani, mille raames on kõik tellimused -20% soodsamad. Wall&Deco brändilt võib leida erilise sarja nimega Wet-System, mis viitab just niiskuskindlatele tapeetidele ning mida tahaksime lähemalt tutvustada.
+                                    </p>
+                                </div>
+
+                                <div class="uudised-item__text-btn read-more-article">
+                                    <div class="uudised-item__text-btn-main">
+                                        <div class="uudised-item__text-btn_text">
+                                            Loe rohkem
+                                        </div>
+                                        
+                                        <div class="uudised-item__text-btn_arrow">
+                                            <i class="fal fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+                <a href="#" class="uudised-item">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="uudised-item__img">
+                                <img src="build/img/homepage/uudised/uudised-1.jpg" alt="Garden layers">
+                                <div class="uudised-item__img-title read-more-article">
+                                    29 juuli 2019
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="uudised-item__text">
+                                <div>
+                                    <h3>Uus ja unikaalne bränd Inspiras – GAN</h3>
+                                    <p>
+                                        <b>“GARDEN LAYERS” </b> on esimene ainulaadse <b>GAN Spaces</b>  kontseptsiooni raames loodud välimööbli kollektsioon, kuhu kuuluvad vaibad, matid, rull-padjad ja padjad, mida saab paigutada mitmel erineval moel, luues
+                                    </p>
+                                </div>
+                                <div class="uudised-item__text-btn read-more-article">
+                                    <div class="uudised-item__text-btn-main">
+                                        <div class="uudised-item__text-btn_text">
+                                            Loe rohkem
+                                        </div>
+                                        
+                                        <div class="uudised-item__text-btn_arrow">
+                                            <i class="fal fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+                <a href="#" class="uudised-item">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="uudised-item__img">
+                                <img src="build/img/homepage/uudised/uudised-2.jpg" alt="B&B Italia layers">
+                                <div class="uudised-item__img-title read-more-article">
+                                    1 mai 2019 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="uudised-item__text">
+                                <div>
+                                    <h3>Uued terrassimööbli näidised Inspiras</h3>
+                                    <p>
+                                        <b>Inspira</b>  showroomist võib leida uue <b>B&B Italia</b>  välimööbli kollektsiooni <b>“Ribes”</b> . Ribes on Antonio Citterio kavandatud uus modulaarne istmete süsteem, mis keskendub mitmekülgsusele, värvile ja põnevatele materjalide. 
+                                    </p>
+                                </div>
+
+                                <div class="uudised-item__text-btn read-more-article">
+                                    <div class="uudised-item__text-btn-main">
+                                        <div class="uudised-item__text-btn_text">
+                                            Loe rohkem
+                                        </div>
+                                        
+                                        <div class="uudised-item__text-btn_arrow">
+                                            <i class="fal fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+                <a href="#" class="uudised-item">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="uudised-item__img">
+                                <img src="build/img/homepage/uudised/uudised-3.jpg" alt="Wall&Deco layers">
+                                <div class="uudised-item__img-title read-more-article">
+                                    1 oktoober 2018
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="uudised-item__text">
+                                <div>
+                                    <h3>Vau! Wall&Deco niiskuskindlad tapeedid
+                                            Wet-System oktoobris -20% soodsamad!</h3>
+                                    <p>
+                                        Oktoobris on käimas Wall&Deco tapeetide kampaani, mille raames on kõik tellimused -20% soodsamad. Wall&Deco brändilt võib leida erilise sarja nimega Wet-System, mis viitab just niiskuskindlatele tapeetidele ning mida tahaksime lähemalt tutvustada.
+                                    </p>
+                                </div>
+
+                                <div class="uudised-item__text-btn read-more-article">
+                                    <div class="uudised-item__text-btn-main">
+                                        <div class="uudised-item__text-btn_text">
+                                            Loe rohkem
+                                        </div>
+                                        
+                                        <div class="uudised-item__text-btn_arrow">
+                                            <i class="fal fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    
+</main>
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="footer__tooted">
+                    <div class="footer__title">
+                        Tooted
+                    </div>
+                    <div class="footer__tooted-content">
+                        <ul>
+                            <li><a href="#">Mööbel</a></li>
+                            <li><a href="#">Köögid</a></li>
+                            <li><a href="#">Vannituba</a></li>
+                            <li><a href="#">Valgustid</a></li>
+                            <li><a href="#">Välimööbel</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a href="#">Tapeedid</a></li>
+                            <li><a href="#">Vaibad</a></li>
+                            <li><a href="#">Aksessuaarid</a></li>
+                            <li><a href="#">Projektimüük</a></li>
+                            <li><a href="#">Outlet</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+                <div class="footer__contact">
+                    <div class="footer__title">
+                        <a href="#">Kontakt</a>
+                        
+                    </div>
+                    <div class="footer__contact-decs">
+                            Inspira Design OÜ
+                    </div>
+                    <ul>
+                        <li> <a href="https://google.ru" target="_blank"><img src="build/img/homepage/inspira_design/Icon_feather-map-pin.svg" alt="map"> Tartu mnt 14, Tallinn, Eesti</a></li>
+                        <li class="tel"><img src="build/img/homepage/inspira_design/Icon_feather-phone-call.svg" alt="phone"> <a href="#"><span>+372</span> 5621 1113</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#"><span>+372</span> 6 108 468</a></li>
+                        <li> <a href="#"><img src="build/img/homepage/inspira_design/Icon_feather-mail.svg" alt="mail"> inspira@inspira.ee</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="footer__meid">
+                    <div class="footer__title">
+                            Jälgi meid
+                    </div>
+                    <ul>
+                        <li> <a href="#"><img src="build/img/homepage/footer/facebook.svg" alt="mail"> Facebook</a></li>
+                        <li> <a href="#"><img src="build/img/homepage/footer/instagram.svg" alt="mail"> Instagram</a></li>
+                        <li> <a href="#"><img src="build/img/homepage/footer/telegram.svg" alt="mail"> Liitu uudiskirjaga</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="build/js/pro.js"></script>
+<script src="build/js/slick.min.js"></script>
+<script src="build/js/main.min.js"></script>
+</body>
+</html>

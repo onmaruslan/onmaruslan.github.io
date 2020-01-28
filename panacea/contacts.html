@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link href="https://fonts.googleapis.com/css?family=Philosopher:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="build/css/main.min.css">
+   <title>Контакты</title>
+</head>
+<body>
+   <header class="header header-contacts" id="header-contacts">
+      <div class="container">
+        <div class="row">
+            <div class="col-5 col-sm-3 offset-1 offset-sm-0 padding">
+                <div class="brand d-flex align-items-center">
+                    <a href="/">центр эзотерики <br>
+                        "панацея"</a>
+                </div>
+            </div>
+            <div class="col-1 col-sm-7 padding">
+               <div class="overlay">
+                  <nav class="overlayMenu d-flex align-items-center justify-content-around" id="menu2" >
+                     <ul  role="menu" class="menu_nav">
+                        <li><a href="/#larisa"  rel="noopener noreferrer">Консультанты</a></li>
+                        <li><a href="#"  rel="noopener noreferrer">Цена вопроса</a></li>
+                        <li><a href="/#reviews"  rel="noopener noreferrer">Отзывы</a></li>
+                        <li class="active"><a href="#"  rel="noopener noreferrer">Контакты</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="navBurger" role="navigation" id="navToggle"></div> 
+            </div>
+            <div class="col-4 col-sm-2 padding">
+                <div class="tel d-flex align-items-center">
+                        <div>
+                                <a href="tel:9219008123">(921) 900-8-123</a><br>
+                                <a href="tel:8123476707">(812) 347-67-07</a>
+                        </div>
+                        
+                </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <section class="contacts" id="contacts">
+            <div class="container position-relative">
+                <img class="contacts-img-1" src="build/img/cart1.png" alt="img">
+                <img class="contacts-img-2" src="build/img/cart2.png" alt="img">
+                <img class="contacts-img-3" src="build/img/sun.png" alt="img">
+                <img class="contacts-img-4" src="build/img/sun.png" alt="img">
+                <div class="row padding-top-row">
+                    <div class="col">
+                            <div class="contacts-link">
+                                <a href="">Главная</a> / Текст для сео
+                            </div>
+                    </div>
+                </div>
+                <div class="row d-flex flex-wrap">
+                    <div class="col-10 col-md-5 col-lg-4">
+                        <div class="contacts-contant">
+                            <h1 class="contacts-contant-h1">Контакты</h1>
+                            <div class="contacts-contant__str">
+                                г. Санкт-Петербург, наб. р. <br class="d-block d-mg-none"> Карповки, д. 10, <br class="d-none d-mg-block">
+                                м.Петроградская <br>
+                                <a href="mailto:landra@ro.ru">landra@ro.ru</a>
+                            </div>
+                            <div class="contacts-contant__tel d-flex flex-column">
+                                <a href="tel:(921) 900-8-123">(921) 900-8-123</a>
+                                <a href="tel:(812) 347-67-0">(812) 347-67-07</a>
+                            </div>
+                            <div class="contacts-contant__icons">
+                                <a href="#"><img src="build/img/contacts/icon-1.png" alt="facebook"></a>
+                                <a href="#"><img src="build/img/contacts/icon-2.png" alt="facebook"></a>
+                                <a href="#"><img src="build/img/contacts/icon-3.png" alt="facebook"></a>
+                                <a href="#"><img src="build/img/contacts/icon-4.png" alt="facebook"></a>
+                                <a href="#"><img src="build/img/contacts/icon-5.png" alt="facebook"></a>
+                            </div>
+                            <div class="contacts-contant__text">
+                                <h6>
+                                    Эзотеризм 
+                                </h6>
+                                <br>
+                                <p>
+                                    (от др.-греч. σωτερικός «внутренний»), 
+                                    эзотерика — совокупность знаний, сведений, недоступных непосвящённым, несведущим в мистических учениях людям, особых способов восприятия реальности, имеющих тайное содержание и выражение 
+                                    в «психодуховных практиках».
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-6 offset-md-0 offset-lg-1 d-flex align-items-end">
+                        <div class="contacts-form">
+                            <h3>
+                                Заполните форму
+                            </h3>
+                            <div>И моя помощница свяжется с Вами для записи</div>
+                            <form name="form">
+
+                                <input required type="text" name="first_name" placeholder="Ваше имя" class="name">
+                                <input required type="tel" name="tel" placeholder="Телефон +7" class="tel">
+                                <textarea name="message" placeholder="Ваш вопрос" class="message"></textarea>
+                                <button name="submit" value="Submit">Оставить сообщение</button>
+                                <div class="submited">
+                                    Сообщение успешно отправленно!
+                                </div>
+                                </form>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+   </section>
+
+
+   <section class="map" id="map">
+        <div class="container-fluid">
+           <div class="row">
+              <div class="col">
+                    <iframe class="map-script" src="https://www.google.com/maps/d/embed?mid=1Kg5Q0ZFHN9Eqh6el6tu80cZ_3TdlJoyr" width="640" height="480"></iframe>
+              </div>
+           </div>
+        </div>
+     </section>
+     <footer class="footer" id="footer">
+        <div class="container">
+           <div class="row">
+              <div class="col-sm-4 col-lg-3  d-none d-sm-block">
+                 <div class="footer__1">
+                       © 2019 PANACEA
+                 </div>
+  
+              </div>
+              <div class="col-sm-8 col-lg-6 d-block d-sm-flex justify-content-between offset-0 offset-lg-3 text-center text-sm-left">
+                 <div class="footer__2">
+                       г. Санкт-Петербург, наб. р. <br class="d-block d-mg-none"> Карповки, д. 10, <br class="d-none d-mg-block">
+                       м.Петроградская <br>
+                       <a href="mailto:landra@ro.ru">landra@ro.ru</a>
+  
+                 </div>
+                 <div class="footer__3 d-flex flex-column">
+                       <a href="tel:(921) 900-8-123">(921) 900-8-123</a>
+                       <a href="tel:(812) 347-67-07">(812) 347-67-07</a>
+                 </div>
+              </div>
+              <div class="col-sm-12 d-block d-sm-none">
+                    <div class="footer__1 text-center">
+                          © 2019 PANACEA
+                    </div>
+     
+              </div>
+           </div>
+        </div>
+     </footer>
+ 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <script src="build/js/main.min.js"></script>
+ <script>
+        $( document ).ready(function() {
+           $('form').submit(function(e) {
+           e.preventDefault();
+           $.ajax({
+               type: "POST",
+               url: "send.php",
+               data: $(this).serialize()
+           }).done(function(){
+               $(this).find("input").val("");
+               $(".submited").css("display", "block");
+   
+               $('form'). trigger('reset');
+           });
+           return false;
+       });
+   });
+       
+       </script>
+</body>
+</html>
