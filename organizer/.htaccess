@@ -1,3 +1,10 @@
-
-
-deny from all
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /organizer
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-l
+    RewriteRule . /test/index.html [L]
+    
+</IfModule>
